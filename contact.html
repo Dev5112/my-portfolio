@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - CyberPortfolio</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-ZZUDol4nGwhR+rxr8q3bfY+rjSgXpT/DAU/fjT5UlzD0KTfFv1elKyb0o7wAvSSUaaQ4rTxRVn1yVHeRjM8KOA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html#home" class="logo">CyberDev</a>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-page">
+    <h1>Contact Me</h1>
+    <p>If you’d like to collaborate or just want to say hello, drop me a message below!</p>
+    
+    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CyberDev. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/Dev5112"><i class="fab fa-github"></i></a>
+      <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+      <a href="javascript:void(0)"><i class="fab fa-whatsapp"></i></a>
+      <a href="javascript:void(0)"><i class="fab fa-facebook"></i></a>
+    </div>
+  </footer>
+
+  <!-- Background Music -->
+  <div class="music-player">
+    <button id="music-toggle">
+      <i class="fas fa-music"></i>
+    </button>
+    <audio id="background-music" src="aspirant.mp3" loop></audio>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
